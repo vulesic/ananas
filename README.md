@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# React Application: Posts and Comments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Conditions](#conditions)
+4. [Build/Run Process](#build-run-process)
+5. [Approximate Time Needed](#approximate-time-needed)
+6. [Console Log](#console-log)
+7. [Notes](#notes)
 
-## Available Scripts
+## Introduction
+This project is a React application + Tailwind that displays a list of posts and associated comments fetched via a provided API. The application includes two routes: `/posts` and `/post/{id}`. It also features a search input for filtering posts by user data and allows users to click on a post to view it in a new page.
+Application is available on Vercel:
+`https://ananas-test-dragan-vulesic.vercel.app/`
+Git respository:
+`https://github.com/vulesic/ananas.git`
 
-In the project directory, you can run:
+## Features
+- Two routes: `/posts` and `/post/{id}`
+- List of posts and associated comments
+- Search input for filtering posts by user data
+- Clicking on a post opens it in a new page
 
-### `npm start`
+## Conditions
+- Minimal usable layout with appealing design
+- No third-party state management or UI component libraries
+- Reusable and resilient components
+- Use of advanced React concepts like HOC, Render props, Compound components, etc.
+- TypeScript
+- Folder structure and code organization as per developer preference
+- Linters, code style checkers, and component testers can be included
+- Unit tests are highly recommended but not mandatory
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Build/Run Process
+1. Clone the repository from GitHub.
+2. Install dependencies using `npm install` or `yarn install`.
+3. Start the development server with `npm start` or `yarn start`.
+4. Access the application in your browser at `http://localhost:3000`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Approximate Time Needed
+1. Project Setup and Initial Configuration:
+   Setting up the React project with create-react-app and configuring TypeScript: 1 hour
+2. Component Architecture and Routing:
+   Defining component structure and creating routes (/posts and /post/{id}): 1 hour
+3. Fetching Data from API:
+   Setting up API integration and fetching posts and comments data: 1 hour
+4. Posts List Component:
+   Designing and implementing the component to display the list of posts: 1.5 hours
+   Implementing filtering functionality based on user data: 0.5 hours
+5. Post Details Component:
+   Designing and implementing the component to display the details of a single post: 1 hour
+6. Search Input Component:
+   Creating the search input component and integrating it with filtering functionality: 0.5 hours
+7. Logging Component Render:
+   Implementing the logging functionality to log "Hello from <component name>" for each rendered component: 0.5 hour
+8. Styling and UI Design:
+   Styling components and ensuring a minimal yet appealing UI design: 1 hour
+   Total Approximate Time: 8 hours
 
-### `npm test`
+## Console Log
+Every component once rendered logs "Hello from <component name>" in the console.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Notes
+- Use `create-react-app` for bootstrapping.
+- Utilize TypeScript for type safety.
+- Ensure code quality with linting and testing tools.
+- Follow best practices for component reusability and code organization.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
